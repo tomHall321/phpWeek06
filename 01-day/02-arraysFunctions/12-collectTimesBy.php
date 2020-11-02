@@ -4,7 +4,7 @@ require __DIR__ . "/vendor/autoload.php";
 
 
 function timesBy($numbers, $otherNumber) {
-    return collect($numbers)->map(fn($val) => $val * $otherNumber);
+    return collect($numbers)->map(fn($num) => $num * $otherNumber);
 }
 
 dump(
