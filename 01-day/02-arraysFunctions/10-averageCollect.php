@@ -7,6 +7,7 @@ function average($numbers){
     // the accumulator and each value in turn   
     // the initial value for $acc is null
     // so make sure you set it
+    // The return value is passed in as the accumulator value for the next iteration
     return collect($numbers)->reduce(fn($acc, $num) => $acc + $num,0) / count($numbers);
 }
  
