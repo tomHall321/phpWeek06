@@ -3,8 +3,13 @@
 require __DIR__ . "/vendor/autoload.php";
 
 function average($numbers){
-    return collect($numbers)->reduce(fn($acc, $num) => $acc + $num) / count($numbers);
+    // remember, reduce takes two arguments
+    // the accumulator and each value in turn   
+    // the initial value for $acc is null
+    // so make sure you set it
+    return collect($numbers)->reduce(fn($acc, $num) => $acc + $num,0) / count($numbers);
 }
+ 
 
 dump(
     average([2, 3, 4, 5, 6]), // 4
