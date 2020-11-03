@@ -16,12 +16,12 @@ class Phone
 
     public function make()
     {
-        return $this-> make;
+        return $this->make;
     }
 
     public function model()
     {
-        return $this-> model;
+        return $this->model;
     }
 
 }
