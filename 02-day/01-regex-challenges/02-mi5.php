@@ -2,6 +2,8 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
+// 00 followed by digit, digit is \d
+
 function mi5($str){
     return preg_match("/00\d/", $str) === 1;
 }
