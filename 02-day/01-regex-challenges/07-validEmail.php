@@ -8,6 +8,7 @@ require __DIR__ . "/vendor/autoload.php";
 // \s+$ whitespace after
 //then replace whitespace with ""
 //compare email address with whitespace removed with FILTER_VALIDATE_EMAIL
+//The filter_var function takes a string and a filter type. It then returns the filtered string if it is valid or false otherwise.
 
 
 function validEmail($str) {
