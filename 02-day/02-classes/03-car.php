@@ -51,3 +51,7 @@ dump($car->getMileage()); // 100
 
 $car->addJourney(200);
 dump($car->getMileage()); // 300
+
+
+$anotherCar = new Car("VW", "ZY11 6TY");
+dump($anotherCar->getMileage());
