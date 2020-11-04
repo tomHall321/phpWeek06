@@ -28,12 +28,14 @@ class Stringy
 
     public function repeat($repeatBy)
     {
-        $eventualString = "";
+        // $eventualString = "";
 
-        for($i=0; $i<$repeatBy; $i+=1){
-            $eventualString .= $this->string;
-        }
-        return $eventualString;
+        // for($i=0; $i<$repeatBy; $i+=1){
+        //     $eventualString .= $this->string;
+        // }
+        // return $eventualString;
+
+        return str_repeat($this->string, $repeat);
     }
 }
 
